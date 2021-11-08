@@ -10,4 +10,8 @@ public interface Function {
         return Math.log(Math.pow(x, 3))-2;
     }
     
+    static double functionTwoThree(double x){
+        return Math.exp(-x);
+    }
+    
 }
