@@ -10,7 +10,7 @@ public class Lab5 {
         
         //inner class, e^(-x)-0.5=0
         Function function1=  new FunkOneOne();
-        System.out.println(root(function1, 0.01, 2, precission));
+        System.out.println("inner class, root of e^(-x)-0.5=0 : x= "+root(function1, 0.01, 2, precission));
         
         //anonim class, sin(x)-0.75=0
         Function function2= new Function() {
@@ -19,20 +19,20 @@ public class Lab5 {
                 return Math.sin(x)-0.75;
             }
         };
-        System.out.println(root(function2, 2, 3, precission));
+        System.out.println("anonim class, root of sin(x)-0.75=0 : x= "+root(function2, 2, 3, precission));
         
         //static method referance, ln(x^3)-2=0
         Function function3= Function::functionOneThree;
-        System.out.println(root(function3, 1, 3, precission));
+        System.out.println("static method referance, root of ln(x^3)-2=0  : x= "+root(function3, 1, 3, precission));
        
         //instance method reference, tgx=0 
         FunkOneFour fof = new FunkOneFour();
         Function function4=fof::tang;
-        System.out.println(root(function4, 2, 4, precission));
+        System.out.println("instance method reference, root of tgx=0 : x= "+root(function4, 2, 4, precission));
         
         //lyambda, x^3-8x+2=0
         Function function5 = x -> x*x*x-8*x+2;
-        System.out.println(root(function5, 1, 5, precission));
+        System.out.println("lyambda, root of x^3-8x+2=0 : x= "+root(function5, 1, 5, precission));
       
     }
     
