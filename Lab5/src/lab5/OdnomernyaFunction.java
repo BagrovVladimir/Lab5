@@ -29,9 +29,9 @@ public class OdnomernyaFunction {
         Function function4= ftf::xkvadrat;
         System.out.println("instance reference method, f(x)=x^2, bounds of x:[1,3] : "+rectangleOdnomer(function4, 1, 3, n));
         
-        //lyambda, f(x)=x*sin(x), bounds of x:[0,1]
+        //lyambda, f(x)=xsin(x), bounds of x:[0,1]
         Function function5=x -> x*Math.sin(x);
-        System.out.println("lyambda, f(x)=x*sin(x), bounds of x:[0,1] : "+rectangleOdnomer(function5, 0, 1, n));
+        System.out.println("lyambda, f(x)=xsin(x), bounds of x:[0,1] : "+rectangleOdnomer(function5, 0, 1, n));
         
         
         
