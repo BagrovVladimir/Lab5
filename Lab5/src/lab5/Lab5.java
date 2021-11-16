@@ -2,6 +2,16 @@
 package lab5;
 
 public class Lab5 {
+   
+    
+   
+    
+    
+    
+    
+    
+    
+    
     
     private static final double precission = 1e-5;
     //static double x;
